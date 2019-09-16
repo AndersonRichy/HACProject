@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+<button onclick="segundos()">item1</button>
+<br>
+<button onclick="segundos()">item2</button>
+<div id="pontosT"></div>
+
+
+</body>
+</html>
+
+<script>
+
+var pontos = 0;
+var item = 1;
+var item2 = 10;
+
+
+
+function segundos()
+{
+setInterval(function() {
+            pontosT.innerHTML = pontos;  
+            Item1();  
+            Item2();
+        }, 100);
+}
+
+function Item1()
+{
+    pontos += item;
+}
+
+function Item2()
+{
+    pontos += item2;
+}
+</script>
